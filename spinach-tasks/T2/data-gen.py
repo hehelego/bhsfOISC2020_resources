@@ -70,7 +70,7 @@ if __name__=="__main__":
     genonce(2,(1,[],{(1,1):13}))
     genonce(3,(18,[],get_w(18)))
 
-    genonce(4,(14,get_tree(14),get_w(14)))
+    genonce(4,(4,get_tree(4),get_w(4)))
     genonce(5,(16,get_tree(16),get_w(16)))
     genonce(6,(18,get_tree(18),get_w(18)))
     
