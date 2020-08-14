@@ -71,11 +71,11 @@ if __name__=="__main__":
     genonce(3,(18,[],get_w(18)))
 
     genonce(4,(4,get_tree(4),get_w(4)))
-    genonce(5,(16,get_tree(16),get_w(16)))
-    genonce(6,(18,get_tree(18),get_w(18)))
+    genonce(5,(20,get_tree(20),get_w(20)))
+    genonce(6,(21,get_tree(21),get_w(21)))
     
-    genonce(7,(8,gen_graph(8),get_w(8)))
-    genonce(8,(15,gen_graph(15),get_w(15)))
-    genonce(9,(18,gen_graph(18),get_w(18)))
+    genonce(7,(18,gen_graph(18),get_w(18)))
+    genonce(8,(20,gen_graph(20),get_w(20)))
+    genonce(9,(22,gen_graph(22),get_w(22)))
 
     run('rm a.out')

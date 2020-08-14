@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 typedef long long Int;
 const Int INF=Int(1e15);
-const int N=20;
+const int N=22;
 int read(){ int x=0;std::cin>>x;return x; }
 
 int n,m,g[N],bs[1<<N],w[N][N],conn[1<<N];
