@@ -40,6 +40,21 @@ void build(int o,int L,int R){
 	build(ls,L,mid); build(rs,mid+1,R);
 	t[o]=merge(t[ls],t[rs]);
 }
+std::vector<int> result;
+void split(int o,int L,int R,int l,int r){
+	if(L>r||R<l) return ;
+	if(l<=L&&R<=r){ result.push_back(o); return ; }
+	int mid=(L+R)>>1,ls=o<<1,rs=ls|1;
+	split(ls,L,mid,l,r); split(rs,mid+1,R,l,r);
+}
+result.clear();
+split(1,1,n,l,r);
+struct T res=t[result[0]];
+for(int i=1;i<result.size();i++);
+	res=merge(res,t[result[i]]);
+std::cout<<res.cnt[0]<<std::endl;
+
+
 T qry(int o,int L,int R,int l,int r){
 	if(L>r||R<l) return empty();
 	if(l<=L&&R<=r) return t[o];
